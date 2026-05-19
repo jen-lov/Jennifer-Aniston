@@ -1,0 +1,171 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.7, viewport-fit=cover"
+    />
+    <title>Jennifer Aniston | The Exclusive Call Experience</title>
+  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cinema-glow">
+      <div class="glow-orb orb1"></div>
+      <div class="glow-orb orb2"></div>
+      <div class="glow-orb orb3"></div>
+    </div>
+
+    <main class="luxury-container">
+      <section class="hero">
+        <h1>Talk With Jennifer Aniston</h1>
+        <div class="subhead">Exclusive fan experience</div>
+        <p class="hero-tagline">
+          A once-in-a-lifetime private conversation. Select your golden moment —
+          voice or video — and step into Hollywood elegance.
+        </p>
+        <button class="cta-gold" id="scrollToBookingBtn">
+          ✦ Book Your Star Call ✦
+        </button>
+      </section>
+
+      <div class="glass-booking" id="bookingSection">
+        <!-- glowing dynamic pricing card -->
+        <div class="price-glow-card">
+          <div class="price-label-sm">Your exclusive experience</div>
+          <div class="total-amount" id="dynamicPrice">
+            $120<span> USD</span>
+          </div>
+          <div style="font-size: 0.75rem; letter-spacing: 1px">
+            concierge-level service
+          </div>
+        </div>
+
+        <form id="celebrityBookingForm">
+          <div class="form-grid">
+            <div class="input-group">
+              <label>Full Name *</label>
+              <input
+                type="text"
+                id="fullName"
+                required
+                placeholder="Jennifer’s special guest"
+              />
+            </div>
+            <div class="input-group">
+              <label>Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="hello@example.com"
+              />
+            </div>
+            <div class="input-group">
+              <label>Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                required
+                placeholder="+1 310 555 9876"
+              />
+            </div>
+            <div class="input-group">
+              <label>Country</label>
+              <select id="country">
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="RO">Rumania</option>
+                <option value="IT">Italy</option>
+                <option value="AE">UAE - Dubai</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label>Preferred Call Date *</label>
+              <input type="date" id="callDate" required />
+            </div>
+            <div class="input-group">
+              <label>Preferred Time *</label>
+              <input type="time" id="callTime" required />
+            </div>
+
+            <!-- Call Type Selection -->
+            <div class="input-group full-width">
+              <label>Call Type Selection</label>
+              <div class="calltype-group">
+                <label class="radio-premium">
+                  <input type="radio" name="callType" value="voice" checked />
+                  Voice Call — $120
+                </label>
+                <label class="radio-premium">
+                  <input type="radio" name="callType" value="video" /> Video
+                  Call — $220
+                </label>
+              </div>
+            </div>
+
+            <div class="input-group full-width">
+              <label>Message to Jennifer</label>
+              <textarea
+                rows="3"
+                placeholder="Share a personal note or special request..."
+              ></textarea>
+            </div>
+
+            <div class="input-group">
+              <label>Payment Method *</label>
+              <select id="paymentMethod" required>
+                <option value="applepay">🍎 Apple Pay</option>
+                <option value="goldraza">✨ Gold Raza Card</option>
+              </select>
+            </div>
+
+            <div class="input-group terms-row full-width">
+              <input type="checkbox" id="termsCheck" required />
+              <label for="termsCheck"
+                >I agree to the Exclusive Terms & Conditions & Privacy Policy
+                ✦</label
+              >
+            </div>
+
+            <div class="full-width">
+              <button type="submit" class="submit-luxury" id="submitBookingBtn">
+                Secure My Experience →
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <hr />
+        © 2025 THE ANISTON ATELIER — Official Celebrity Connection. All rights
+        reserved.
+      </footer>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="hollywood-modal">
+      <div class="modal-dialog">
+        <h3>✨ Request Received ✨</h3>
+        <p>
+          Your request has been submitted successfully. Our team will contact
+          you soon.
+        </p>
+        <button class="modal-close-btn" id="closeModalBtn">Wonderful</button>
+      </div>
+    </div>
+
+   
+    <script src="main.js"></script>
+  </body>
+</html>
+
